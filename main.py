@@ -44,9 +44,17 @@ res_2 = fib.fibonacci_recur(20)
 
     print(f"{'Task #3':-^60}")
 
-    list_to_check = [1, 2, 3, 4, 5]
+    list_to_check_1 = [1, 2, 3, 4, 5]
 
-    r = ls.list_sum(list_to_check, lambda x: x if not x % 2 else 0)
+    r = ls.list_sum(list_to_check_1, lambda x: x if not x % 2 else 0)
 
     print(f"The sum of the list is {r()}")
+
+    # Or
+    print("-" * 60)
+
+    list_to_check_2 = [1, 2, 3, 4, 5]
+    res = map(lambda x: x if not x % 2 else 0, list_to_check_2)
+    print(f"The sum of the list is {sum(res)}")
+
 
